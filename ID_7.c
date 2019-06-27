@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
+/*funcao que verifica se o numero e primo*/
 int isprime(long num) {
     long i;
     for(i = 2; i<= sqrt(num); i++) {
@@ -8,10 +9,10 @@ int isprime(long num) {
             return 0;
         }
     }
-
     return 1;
 }
 
+/*funcao que calcula o numero primo*/
 long primeNumer(int num) {
     long i;
     int counter = 0;
