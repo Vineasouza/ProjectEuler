@@ -1,18 +1,20 @@
 #include <stdio.h>
 
-double primo() {
-    double resp = 1, primo = 5;
-    while(resp <= 10 001) {
-        primo+=2
+int primo() {
+    int resp = 1, primo = 5;
+    while(resp <= 10001) {
+        primo+=2;
         resp++;
     }
     return primo;
 }
 
 int main(int argc, char const *argv[]) {
-    double resposta = 0;
+    int resposta = 0;
 
     resposta = primo();
+
+    printf("> %d", resposta);
 
     return 0;
 }
